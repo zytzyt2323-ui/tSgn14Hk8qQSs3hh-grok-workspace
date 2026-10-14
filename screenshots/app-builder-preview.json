@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Pitchboard",
+      "hasCanvas": false,
+      "bodyTextLen": 166,
+      "bodyTextHash": "7c266af7f32cf4d4f0083dfea470fdabb956e8dd3ac8b4fcbb1f44e246dcfe5d",
+      "bodyTextPrefix": "Pitchboard 阵型板 阵型板 主队客队 同一块球场 两队对阵排阵。按住向外拉出圆形或椭圆压迫圈，直线或弧线画跑位，画完还",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Pitchboard",
+      "hasCanvas": false,
+      "bodyTextLen": 165,
+      "bodyTextHash": "79f08bb5b085e348b52763c68605f5740e13be282f686470b172cdd675909cf2",
+      "bodyTextPrefix": "Pitchboard 登录 阵型板 主队客队 同一块球场 两队对阵排阵。按住向外拉出圆形或椭圆压迫圈，直线或弧线画跑位，画完还能",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

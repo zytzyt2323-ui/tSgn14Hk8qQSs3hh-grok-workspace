@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", "Archivo Narrow", sans-serif;
+
+  --color-bg: #08110d;
+  --color-surface: #101a14;
+  --color-elevated: #17241c;
+  --color-fg: #e9eee8;
+  --color-muted: #8b988c;
+  --color-subtle: #5d6a60;
+  --color-border: #24332a;
+  --color-primary: #d7ddd4;
+  --color-primary-fg: #0b140f;
+  --color-accent: #7ea48a;
+  --color-pitch: #1a5c32;
+  --color-pitch-dark: #134726;
+  --color-line: #dce8d8;
+  --color-danger: #c45c5c;
+  --color-kit-home: #e9eee8;
+  --color-kit-home-ink: #0b140f;
+  --color-kit-away: #1c2430;
+  --color-kit-away-ink: #e9eee8;
+  --color-kit-third: #6b1f24;
+  --color-kit-third-ink: #f3ece8;
+  --color-kit-keeper: #c4a24a;
+  --color-kit-keeper-ink: #1a1408;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --shadow-panel: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.pitch-grass {
+  background:
+    repeating-linear-gradient(
+      180deg,
+      var(--color-pitch) 0 9%,
+      var(--color-pitch-dark) 9% 18%
+    );
+}
+
+.token-kit-home {
+  background: var(--color-kit-home);
+  color: var(--color-kit-home-ink);
+}
+.token-kit-away {
+  background: var(--color-kit-away);
+  color: var(--color-kit-away-ink);
+}
+.token-kit-third {
+  background: var(--color-kit-third);
+  color: var(--color-kit-third-ink);
+}
+.token-kit-keeper {
+  background: var(--color-kit-keeper);
+  color: var(--color-kit-keeper-ink);
+}
